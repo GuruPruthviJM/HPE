@@ -28,4 +28,4 @@ urlpatterns = [
     path('query/', views.query),
     path('submitedQuery/', views.submitedQuery, name='submitedQuery'),
     path('contact/', views.ContactPage.as_view(), name='contact'),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

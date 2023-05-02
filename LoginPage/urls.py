@@ -32,5 +32,5 @@ urlpatterns = [
     path('contact/', views.ContactPage.as_view(), name='contact'),
 ]
 
-if settings.DEBUG:
+if True:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

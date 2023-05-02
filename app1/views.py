@@ -7,7 +7,7 @@ from .models import Query
 
 
 # we can create a bug here...
-# @login_required(login_url='login')
+@login_required(login_url='login')
 def HomePage(request):
     return render(request, 'home.html')
 
